@@ -1,0 +1,1083 @@
+@import "global";
+@import "reset";
+@import "mixin";
+
+#header {
+  @include background();
+
+  .header {
+    padding: 10px 0;
+    @include df();
+
+    &--nav {
+      a {
+        line-height: 19px;
+        font-family: $font;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 0 15px;
+      }
+    }
+
+    &--logo {
+      ion-icon {
+        color: $white;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+#hero {
+  @include background();
+
+  .hero {
+    @include df();
+    padding-top: 100px;
+
+    &--text {
+      h1 {
+        font-weight: 400;
+        font-size: 72px;
+        color: #FFFFFF;
+        line-height: 76px;
+      }
+
+      p {
+        line-height: 34px;
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 22px;
+        color: #FFFFFF;
+      }
+
+      button {
+        @include center();
+        width: 200px;
+        height: 66px;
+        background: $white;
+        border: 2px solid #FFFFFF;
+        border-radius: 32px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        line-height: 25px;
+      }
+
+      &__logo {
+        padding-top: 100px;
+        @include center();
+        padding-right: 200px;
+
+        &--bred {
+          h3 {
+            line-height: 26px;
+            font-weight: 400;
+            font-size: 18px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#page {
+  .page {
+    @include df();
+    padding-top: 100px;
+
+    &--text {
+      padding-bottom: 150px;
+
+      &__logo {
+        @include center();
+        padding-bottom: 100px;
+        padding-right: 300px;
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: $dark;
+      }
+
+      &__prof {
+        padding-top: 10px;
+        @include center();
+        padding-right: 200px;
+
+        &--word {
+          padding: 10px;
+
+          h3 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: $dark;
+          }
+
+          h4 {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: $dark;
+          }
+        }
+      }
+    }
+
+    &--blog {
+      padding-bottom: 150px;
+
+      h1 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 54px;
+        color: $dark;
+      }
+
+      &__img {
+        @include df();
+        padding-top: 50px;
+
+        &--one {
+          h2 {
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 66px;
+            color: $purple;
+          }
+
+          h5 {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 31px;
+          }
+        }
+
+        &--two {
+          h2 {
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 66px;
+            color: $purple;
+          }
+
+          h5 {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 31px;
+          }
+        }
+
+        &--three {
+          h2 {
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 66px;
+            color: $purple;
+          }
+
+          h5 {
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 31px;
+          }
+        }
+      }
+
+      &__toys {
+        img {
+          padding-top: 50px;
+        }
+      }
+
+    }
+  }
+}
+
+#paper {
+  .paper {
+    &--title {
+      display: flex;
+      align-items: center;
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $purple;
+      }
+    }
+
+    h1 {
+      padding-top: 30px;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 66px;
+      color: $dark;
+    }
+
+    &--block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__one {
+        padding-top: 50px;
+
+        &--text {
+          a {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+
+            ion-icon {
+              padding-left: 230px;
+            }
+          }
+
+          @include p();
+        }
+      }
+
+      &__two {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        &--text {
+          a {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+
+            ion-icon {
+              padding-left: 296px;
+            }
+          }
+
+          @include p();
+        }
+      }
+
+      &__three {
+        padding-bottom: 100px;
+
+        &--text {
+          a {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+
+            ion-icon {
+              padding-left: 460px;
+            }
+          }
+
+          @include p();
+        }
+      }
+
+      &__four {
+        &--text {
+          a {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+
+            ion-icon {
+              padding-left: 320px;
+            }
+          }
+
+          @include p();
+        }
+      }
+
+      &__five {
+        &--text {
+          a {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+
+            ion-icon {
+              padding-left: 266px;
+            }
+          }
+
+          @include p();
+        }
+      }
+
+      &__six {
+        padding-left: 700px;
+        padding-bottom: 100px;
+      }
+    }
+
+  }
+}
+
+#temple {
+  @include background();
+
+  .temple {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--logo {
+      @include center();
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        @include center();
+        padding-right: 170px;
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      &__text {
+        h1 {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 54px;
+          color: $white;
+        }
+      }
+    }
+
+    &--1 {
+      padding-right: 50px;
+
+      h4 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+      }
+
+      ion-icon {
+        color: $white;
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    &--2 {
+      h4 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+      }
+
+      ion-icon {
+        color: $white;
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    &--block {
+      display: flex;
+      flex-direction: row;
+      padding-left: 100px;
+
+      &__one {
+        padding-right: 100px;
+
+        h4 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: $white;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          color: $white;
+        }
+      }
+
+      &__two {
+        padding-left: 50px;
+
+        h4 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: $white;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          color: $white;
+        }
+      }
+
+      &__btn {
+        padding-top: 100px;
+        padding-left: 200px;
+
+        button {
+          width: 260px;
+          height: 60px;
+          background: $white;
+          border: 2px solid $white;
+          border-radius: 32px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: $dark;
+        }
+      }
+    }
+
+    &--image {
+      padding-left: 1080px;
+    }
+  }
+}
+
+#subway {
+  background: $grey;
+
+  .subway {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    &--text {
+      &__logo {
+        @include center();
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      &__word {
+        padding-top: 10px;
+
+        h1 {
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 66px;
+          text-align: center;
+          color: $dark;
+        }
+      }
+    }
+
+    &--block {
+      padding-top: 30px;
+      @include df();
+
+      &__word {
+        @include center();
+        background: $white;
+        border-radius: 20px 20px 0px 20px;
+        width: 576px;
+        height: 360px;
+
+        &--logo {
+          h3 {
+            padding-top: 10px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $dark;
+          }
+
+          &__title {
+            padding-top: 20px;
+            padding-right: 300px;
+
+            &--quote {
+              h3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: $dark;
+              }
+
+              h4 {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+                color: $dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#serfice {
+  .serfice {
+
+    &--logo {
+      padding-top: 100px;
+
+      &__word {
+        @include center();
+        padding-right: 910px;
+        padding-bottom: 10px;
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      &__text {
+        @include df();
+
+        h1 {
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 64px;
+          letter-spacing: 1.2px;
+          color: $dark;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 34px;
+          color: $dark;
+        }
+      }
+    }
+
+    &--title {
+      @include df();
+
+      &__quote {
+        h2 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: $dark;
+        }
+
+        h5 {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 28px;
+          color: $dark;
+        }
+      }
+
+      &__three {
+        padding-top: 28px;
+
+        h2 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: $dark;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          color: $dark;
+        }
+      }
+
+    }
+  }
+}
+
+#tired {
+  padding-top: 100px;
+
+  .tired {
+    &--text {
+      &__logo {
+        @include center();
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      &__word {
+        padding-top: 10px;
+
+        h1 {
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 66px;
+          text-align: center;
+          color: $dark;
+        }
+      }
+    }
+
+    &--block {
+      @include df();
+
+      &__type {
+        img {
+          padding: 15px;
+        }
+
+        &--bred {
+          padding: 15px;
+
+          h4 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+          }
+
+          h5 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $dark;
+          }
+        }
+      }
+    }
+
+    &--border {
+      @include center();
+
+      a {
+        padding-top: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        color: $purple;
+
+        ion-icon {
+          color: $purple;
+        }
+      }
+    }
+
+    &--line {
+      @include center();
+
+      hr {
+        width: 170px;
+        padding: 1px 0;
+        background: $grey;
+      }
+    }
+
+  }
+}
+
+#broken {
+  padding-top: 100px;
+
+  .broken {
+    &--logo {
+      padding-top: 100px;
+
+      &__word {
+        @include center();
+        padding-right: 910px;
+        padding-bottom: 10px;
+
+        h5 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $purple;
+        }
+      }
+
+      &__text {
+        @include df();
+
+        h1 {
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 64px;
+          letter-spacing: 1.2px;
+          color: $dark;
+        }
+
+        button {
+          @include df();
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: $white;
+          background: $purple;
+          border-radius: 32px;
+          width: 274px;
+          height: 65px;
+        }
+      }
+    }
+
+    &--block {
+      display: flex;
+      flex-direction: column;
+
+      &__room {
+        @include center();
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        img {
+          padding: 10px;
+        }
+
+        &--two {
+          @include center();
+          padding-bottom: 30px;
+          padding-top: 30px;
+          padding-left: 40px;
+
+          img {
+            padding: 10px;
+          }
+
+          &__space {
+            h4 {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: $purple;
+            }
+
+            &--btn {
+              padding-left: 640px;
+
+              a {
+                padding-top: 50px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 19px;
+                color: $purple;
+
+                ion-icon {
+                  color: $purple;
+                }
+              }
+            }
+
+            &--line {
+              padding-left: 640px;
+
+              hr {
+                width: 170px;
+                padding: 1px 0;
+                background: $grey;
+              }
+            }
+
+            h3 {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 30px;
+              color: $dark;
+            }
+
+            h6 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 28px;
+              color: $dark;
+            }
+          }
+        }
+
+        &--space {
+          h4 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $purple;
+          }
+
+          &__btn {
+            padding-left: 600px;
+
+            a {
+              padding-top: 50px;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 19px;
+              color: $purple;
+
+              ion-icon {
+                color: $purple;
+              }
+            }
+          }
+
+          &__line {
+            padding-left: 600px;
+
+            hr {
+              width: 170px;
+              padding: 1px 0;
+              background: $grey;
+            }
+          }
+
+          h3 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark;
+          }
+
+          h6 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            color: $dark;
+          }
+        }
+      }
+
+      &--line {
+        hr {
+          background: $grey;
+        }
+      }
+    }
+
+
+  }
+}
+
+#inside {
+  padding-top: 100px;
+  .inside {
+    @include center();
+
+    &--block {
+
+      img{
+        width: 674px;
+        position: relative;
+      }
+
+      @include center();
+      &__text {
+        position: absolute;
+        h1 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center;
+          color: $white;
+        }
+
+        h5 {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+          color: $white;
+        }
+
+      }
+    }
+  }
+}
+
+#footer {
+  background: $blue;
+
+  .footer {
+    padding-top: 80px;
+
+    &--logo {
+      @include center();
+      padding-bottom: 15px;
+      padding-right: 300px;
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $grey;
+      }
+    }
+
+    &--word {
+      @include df();
+      h1 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 66px;
+        color: $white;
+      }
+
+      h2 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 66px;
+        color: $grey;
+      }
+    }
+
+    &--block {
+      @include df();
+      padding: 30px;
+      &__btn {
+        a {
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 28px;
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+
+      &__text {
+        h4 {
+          font-weight: 200;
+          font-size: 17px;
+          line-height: 28px;
+          color: $white;
+        }
+      }
+
+      &__putin {
+        h3 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          color: $white;
+        }
+
+        &--price {
+          @include df();
+          input {
+            width: 290px;
+            height: 48px;
+            left: calc(50% - 290px / 2 - 80px);
+            top: calc(50% - 48px / 2);
+
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 240px;
+            background: $blue;
+          }
+
+          button {
+            width: 140px;
+            height: 48px;
+            background: $purple;
+            border-radius: 24px;
+          }
+        }
+      }
+    }
+
+    &--line {
+      hr {
+        width: 170px;
+        background: $grey;
+      }
+    }
+
+    &--ending {
+      @include df();
+      padding: 50px;
+      &__never {
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $grey;
+        }
+      }
+    }
+
+  }
+}
